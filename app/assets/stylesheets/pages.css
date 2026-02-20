@@ -1,0 +1,33 @@
+h1 {
+	text-align: left;
+}
+
+.navbar ul{
+	text-align: center;
+	list-style-type: none;
+	background-color: grey;
+	padding: 0px;
+	margin: 0px;
+}
+
+.navbar a{
+	color: grey;	
+	text-decoration: none ;
+	padding: 3px;
+	display: block;
+	text-align: center;
+
+}
+
+h3{
+	text-align: center;
+	background-color: greenyellow;
+}
+
+.navbar a:hover{
+	background-color: blue;
+}
+
+.navbar li {
+	float: left;
+}

@@ -1,0 +1,64 @@
+// Variables
+$primary-color: #333;
+$secondary-color: #fff;
+$hover-color: #000;
+$background-color: #555;
+
+// Basic Reset
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex; // Use Flexbox for layout
+    justify-content: space-between; // Aligns title to one end, menu to the other
+    align-items: center; // Centers items vertically
+    min-height: 60px; // Ensures header has a minimum height
+}
+
+.site-header {
+    background-color: $background-color;
+    color: $secondary-color;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    // Use position: sticky if you want the header to stay at the top during scrolling
+    // position: sticky;
+    // top: 0;
+    width: 100%;
+    
+    .site-title h1 {
+        font-size: 1.5rem;
+        color: $secondary-color;
+    }
+
+    .site-nav {
+        ul {
+            list-style: none; // Removes bullet points
+            display: flex; // Arranges list items horizontally
+            
+            li {
+                margin-left: 20px; // Spacing between menu items
+
+                a {
+                    color: $secondary-color;
+                    text-decoration: none; // Removes underlines
+                    padding: 10px 15px;
+                    display: block;
+
+                    &:hover {
+                        background-color: $hover-color;
+                        border-radius: 4px;
+                    }
+                }
+            }
+        }
+    }
+}
