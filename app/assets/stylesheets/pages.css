@@ -1,5 +1,7 @@
 h1 {
 	text-align: left;
+	background-color: greenyellow;
+	text-align: center;
 }
 
 .navbar ul{
@@ -13,7 +15,7 @@ h1 {
 .navbar a{
 	color: grey;	
 	text-decoration: none ;
-	padding: 3px;
+	padding: 3 opx;
 	display: block;
 	text-align: center;
 
